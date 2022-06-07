@@ -63,11 +63,11 @@ def list_dogs
   end
 end
 
-def print_dog(dog_hash)
-  puts ""
-  puts dog_hash[:name].light_green
-  puts "  age: #{dog_hash[:age]}"
-  puts "  breed: #{dog_hash[:breed]}"
-  puts "  favorite_treats: #{dog_hash[:favorite_treats]}"
-  puts ""
-end
+# def print_dog(dog_hash)
+#   puts ""
+#   puts dog_hash[:name].light_green
+#   puts "  age: #{dog_hash[:age]}"
+#   puts "  breed: #{dog_hash[:breed]}"
+#   puts "  favorite_treats: #{dog_hash[:favorite_treats]}"
+#   puts ""
+# end

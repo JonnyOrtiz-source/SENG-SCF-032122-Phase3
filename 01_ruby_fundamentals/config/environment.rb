@@ -6,7 +6,7 @@ require "pry"
 # lib directory all at once
 require "require_all"
 
-# require "colorize"
+require "colorize"
 
 # When we use `require_all`, the path we pass to it will be 
 # relative to the root path of the project (where the Gemfile 
