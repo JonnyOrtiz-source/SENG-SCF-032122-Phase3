@@ -7,7 +7,7 @@ class Dog
     end
 
     # synctactic sugar: allows reading and writing, replacing getter and setter code.
-    attr_accessor :name, :age, :breed, :image_url
+    attr_accessor :name, :age, :breed, :image_url, :last_walked_at, :last_fed_at
 
     # # getter, aka attr_reader
     # def name
@@ -28,13 +28,22 @@ class Dog
     end
 
     def needs_a_walk?
-        if @last_walked_at
-            !last_walked_at.between(4.hours.ago, Time.now)
+        if last_walked_at
+            !last_walked_at.between?(4.hours.ago, Time.now)
         else
             true
         end
         
     end
+
+    def hungry?
+        if last_fed_at
+            !last_fed_at.between?(6.seconds.ago, Time.now)
+        else
+            true
+        end
+    end
+
 
     def print
         puts ""
