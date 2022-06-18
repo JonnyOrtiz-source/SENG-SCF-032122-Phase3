@@ -19,4 +19,4 @@ lennon.feedings.create(time: 30.minutes.ago)
 
 # create a couple of walks and feedings for Olivia
 olivia.walks.create(time: 15.minutes.ago)
-olivia.feedings.create(time: 2.hours.ago)
+# olivia.feedings.create(time: 2.hours.ago)

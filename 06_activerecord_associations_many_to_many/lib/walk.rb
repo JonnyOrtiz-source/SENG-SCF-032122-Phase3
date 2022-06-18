@@ -4,6 +4,9 @@ class Walk < ActiveRecord::Base
   has_many :dogs, through: :dog_walks
 
   # ✅ add a .recent method that returns all walks in the last 4 hours
+  def self.recent
+    self.where(time: 4.weeks.ago..Time.now)
+  end
 
   # takes the time of the walk and formats it as a string like this:
   # Friday, 04/08 4:57 PM
